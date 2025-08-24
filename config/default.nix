@@ -1,4 +1,8 @@
+{ ... }:
 {
-  # Import all your configuration modules here
-  imports = [ ];
+  imports = [
+    ./keymaps
+    ./options
+    ./plugins
+  ];
 }
