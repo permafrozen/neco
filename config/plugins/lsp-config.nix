@@ -1,6 +1,16 @@
 {
   enable = true;
   inlayHints = true;
+  keymaps = {
+    lspBuf = {
+      K = "hover";
+      gD = "references";
+      gd = "definition";
+      gi = "implementation";
+      gt = "type_definition";
+      "<leader>f" = "format";
+    };
+  };
   servers = {
 
     # UTF-8 Encoding must be set, or the language server will crash! (nixd issue)

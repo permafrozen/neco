@@ -1,28 +1,28 @@
 {
   enable = true;
   keymaps = {
-    "<leader>ff" = {
+    "<leader>sf" = {
       action = "git_files";
       options = {
-        desc = "Telescope git files";
+        desc = "Telescope search git files";
       };
     };
-    "<leader>fg" = {
+    "<leader>sg" = {
       action = "live_grep";
       options = {
         desc = "Telescope live grep";
       };
     };
-    "<leader>fb" = {
+    "<leader>sb" = {
       action = "buffers";
       options = {
         desc = "Telescope search buffers";
       };
     };
-    "<leader>fh" = {
+    "<leader>sh" = {
       action = "help_tags";
       options = {
-        desc = "Telescope help tags";
+        desc = "Telescope search help tags";
       };
     };
   };
