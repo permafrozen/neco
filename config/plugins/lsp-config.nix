@@ -31,6 +31,7 @@
     #   };
     # };
 
+    # Nix Language Server
     nil_ls = {
       enable = true;
       settings = {
@@ -51,7 +52,13 @@
       };
     };
 
+    # QML Language Server
     qmlls = {
+      enable = true;
+    };
+
+    # Spell Checking Language Server
+    typos_lsp = {
       enable = true;
     };
   };

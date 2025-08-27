@@ -10,5 +10,9 @@
     autoclose = import ./autoclose.nix;
     dashboard = import ./dashboard.nix;
     mini = import ./mini.nix;
+    lazygit = import ./lazygit.nix;
+    direnv = import ./direnv.nix;
+    lualine = import ./lualine.nix;
+    oil = import ./oil.nix;
   };
 }

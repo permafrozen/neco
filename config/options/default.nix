@@ -24,22 +24,12 @@
     mouse = "";
     encoding = "utf8";
     termguicolors = true;
-    backspace = [
-      "indent"
-      "eol"
-      "start"
-    ];
-    cursorline = false;
-    wrap = false;
-    background = "dark";
+    wrap = false; 
     tabstop = 2;
     shiftwidth = 2;
     smarttab = true;
     expandtab = true;
-    laststatus = 2;
-    compatible = false;
-    conceallevel = 3;
-    concealcursor = "n";
+    showmode = false;
   };
 
 }
