@@ -50,5 +50,9 @@
         };
       };
     };
+
+    qmlls = {
+      enable = true;
+    };
   };
 }

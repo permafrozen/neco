@@ -4,8 +4,6 @@
     indentscope = {
       draw = {
         delay = 100;
-        # animation = "function: implements constant 20ms between steps";
-        # predicate = "function(scope) return not scope.body.is_incomplete end";
         priority = 2;
       };
       mappings = {
@@ -20,7 +18,7 @@
         n_lines = 10000;
         try_as_border = false;
       };
-      symbol = "│";
+      symbol = "╎";
     };
   };
 }
