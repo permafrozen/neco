@@ -61,5 +61,10 @@
     typos_lsp = {
       enable = true;
     };
+
+    # Typescript
+    ts_ls = {
+      enable = true;
+    };
   };
 }
