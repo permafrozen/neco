@@ -8,11 +8,13 @@
     which-key = import ./which-key.nix;
     web-devicons = import ./web-devicons.nix;
     autoclose = import ./autoclose.nix;
-    dashboard = import ./dashboard.nix;
-    mini = import ./mini.nix;
     lazygit = import ./lazygit.nix;
     direnv = import ./direnv.nix;
-    lualine = import ./lualine.nix;
     oil = import ./oil.nix;
+    todo-comments = import ./todo-comments.nix;
+    neocord = import ./neocord.nix;
+    snacks = import ./snacks.nix;
+    lualine = import ./lualine.nix;
+    mini = import ./mini.nix;
   };
 }

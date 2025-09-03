@@ -2,17 +2,23 @@
   enable = true;
   inlayHints = true;
   keymaps = {
+    diagnostic = {
+      "<leader>j" = "goto_next";
+      "<leader>k" = "goto_prev";
+    };
+
     lspBuf = {
       K = "hover";
       gD = "references";
       gd = "definition";
       gi = "implementation";
       gt = "type_definition";
+      "<leader>a" = "code_action";
+      "<leader>r" = "rename";
       "<leader>f" = "format";
     };
   };
   servers = {
-
     # UTF-8 Encoding must be set, or the language server will crash! (nixd issue)
     # nixd = {
     #   enable = true;
@@ -64,6 +70,11 @@
 
     # Typescript
     ts_ls = {
+      enable = true;
+    };
+
+    # GLSL Language Server
+    glsl_analyzer = {
       enable = true;
     };
   };

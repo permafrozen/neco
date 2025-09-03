@@ -1,24 +1,27 @@
 {
   enable = true;
-  modules = {
-    indentscope = {
-      draw = {
-        delay = 100;
-        priority = 2;
-      };
-      mappings = {
-        object_scope = "ii";
-        object_scope_with_border = "ai";
-        goto_top = "[i";
-        goto_bottom = "]i";
-      };
-      options = {
-        border = "both";
-        indent_at_cursor = true;
-        n_lines = 10000;
-        try_as_border = false;
-      };
-      symbol = "╎";
+  modules.base16 = {
+    plugins = {
+      default = true;
+      "nvim-lualine/lualine.nvim" = false;
+    };
+    palette = {
+      base00 = "#202020";
+      base01 = "#202020";
+      base02 = "#504945";
+      base03 = "#5a524c";
+      base04 = "#bdae93";
+      base05 = "#ddc7a1";
+      base06 = "#ebdbb2";
+      base07 = "#fbf1c7";
+      base08 = "#ea6962";
+      base09 = "#e78a4e";
+      base0A = "#d8a657";
+      base0B = "#a9b665";
+      base0C = "#89b482";
+      base0D = "#7daea3";
+      base0E = "#d3869b";
+      base0F = "#bd6f3e";
     };
   };
 }
