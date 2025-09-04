@@ -1,6 +1,7 @@
 { ... }:
 {
   plugins = {
+    indent-blankline = import ./indent-blankline.nix;
     treesitter = import ./treesitter.nix;
     lsp = import ./lsp-config.nix;
     blink-cmp = import ./blink-cmp.nix;

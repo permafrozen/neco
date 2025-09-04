@@ -1,9 +1,7 @@
 {
   enable = true;
   settings = {
-    indent = {
-      enabled = true;
-    };
+    scroll.enabled = true;
     dashboard = {
       enabled = true;
       preset = {
@@ -60,18 +58,6 @@
           padding = 1;
         }
       ];
-    };
-    words = {
-      enabled = true;
-    };
-    scroll = {
-      enabled = true;
-    };
-    scope = {
-      enabled = true;
-    };
-    statuscolumn = {
-      enabled = true;
     };
   };
 }

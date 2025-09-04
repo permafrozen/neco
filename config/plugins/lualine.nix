@@ -1,65 +1,67 @@
 {
   enable = true;
   settings = {
-    icons_enabled = true;
-    theme =
-      let
-        themeAttrs = {
-          fg.__raw = "MiniBase16.config.palette.base05";
-          bg.__rar = "MiniBase16.config.palette.base00";
+    options = {
+      icons_enabled = true;
+      theme =
+        let
+          themeAttrs = {
+            fg.__raw = "require('mini.base16').config.palette.base05";
+            bg.__raw = "require('mini.base16').config.palette.base00";
+          };
+        in
+        {
+          normal = {
+            a = themeAttrs;
+            b = themeAttrs;
+            c = themeAttrs;
+            x = themeAttrs;
+            y = themeAttrs;
+            z = themeAttrs;
+          };
+          inactive = {
+            a = themeAttrs;
+            b = themeAttrs;
+            c = themeAttrs;
+            x = themeAttrs;
+            y = themeAttrs;
+            z = themeAttrs;
+          };
         };
-      in
-      {
-        normal = {
-          a = themeAttrs;
-          b = themeAttrs;
-          c = themeAttrs;
-          x = themeAttrs;
-          y = themeAttrs;
-          z = themeAttrs;
-        };
-        inactive = {
-          a = themeAttrs;
-          b = themeAttrs;
-          c = themeAttrs;
-          x = themeAttrs;
-          y = themeAttrs;
-          z = themeAttrs;
-        };
+      component_separators = {
+        left = " ";
+        right = " ";
       };
-    component_separators = {
-      left = " ";
-      right = " ";
-    };
-    section_separators = {
-      left = "";
-      right = "";
-    };
-    disabled_filetypes = {
-      statusline = [ ];
-      winbar = [ ];
-    };
-    ignore_focus = { };
-    always_divide_middle = true;
-    always_show_tabline = true;
-    globalstatus = false;
-    refresh = {
-      statusline = 1000;
-      tabline = 1000;
-      winbar = 1000;
-      refresh_time = 16;
-      events = [
-        "WinEnter"
-        "BufEnter"
-        "BufWritePost"
-        "SessionLoadPost"
-        "FileChangedShellPost"
-        "VimResized"
-        "Filetype"
-        "CursorMoved"
-        "CursorMovedI"
-        "ModeChanged"
-      ];
+      section_separators = {
+        left = "";
+        right = "";
+      };
+      disabled_filetypes = {
+        statusline = [ ];
+        winbar = [ ];
+      };
+      ignore_focus = [ ];
+      always_divide_middle = true;
+      always_show_tabline = true;
+      globalstatus = false;
+      refresh = {
+        statusline = 1000;
+        tabline = 1000;
+        winbar = 1000;
+        refresh_time = 16;
+        events = [
+          "WinEnter"
+          "BufEnter"
+          "BufWritePost"
+          "SessionLoadPost"
+          "FileChangedShellPost"
+          "VimResized"
+          "Filetype"
+          "CursorMoved"
+          "CursorMovedI"
+          "ModeChanged"
+        ];
+      };
     };
     sections = {
       lualine_a = [ "mode" ];
