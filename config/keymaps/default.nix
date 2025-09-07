@@ -1,7 +1,6 @@
 { ... }:
 {
   keymaps = [
-
     {
       action = ''"+y'';
       key = "<leader>y";
@@ -35,6 +34,33 @@
       options = {
         silent = true;
         desc = "open lazygit";
+      };
+    }
+
+    # IMPORTANT: no line breaks in 'action' or the command will not be evaluated correctly
+    {
+      action = ''<cmd>lua if require("luasnip").expand_or_jumpable() then return require("luasnip").expand_or_jump() else return "<S-SPACE>" end<CR>'';
+      key = "<S-SPACE>";
+      mode = [
+        "i"
+        "s"
+      ];
+      options = {
+        silent = true;
+        desc = "expand or jump next in snippet";
+      };
+    }
+
+    {
+      action = ''<cmd>lua require("luasnip").jump(-1)'';
+      key = "<C-S-SPACE>";
+      mode = [
+        "i"
+        "s"
+      ];
+      options = {
+        silent = true;
+        desc = "jump back in snippet";
       };
     }
   ];

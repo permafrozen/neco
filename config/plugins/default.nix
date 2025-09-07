@@ -17,5 +17,6 @@
     snacks = import ./snacks.nix;
     lualine = import ./lualine.nix;
     mini = import ./mini.nix;
+    luasnip = import ./luasnip.nix;
   };
 }
