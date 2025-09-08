@@ -39,8 +39,8 @@
 
     # IMPORTANT: no line breaks in 'action' or the command will not be evaluated correctly
     {
-      action = ''<cmd>lua if require("luasnip").expand_or_jumpable() then return require("luasnip").expand_or_jump() else return "<S-SPACE>" end<CR>'';
-      key = "<S-SPACE>";
+      action = ''<cmd>lua if require("luasnip").expand_or_jumpable() then return require("luasnip").expand_or_jump() else return "<TAB>" end<CR>'';
+      key = "<TAB>";
       mode = [
         "i"
         "s"
@@ -53,7 +53,7 @@
 
     {
       action = ''<cmd>lua require("luasnip").jump(-1)'';
-      key = "<C-S-SPACE>";
+      key = "<S-TAB>";
       mode = [
         "i"
         "s"

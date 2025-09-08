@@ -6,6 +6,10 @@
       use_nvim_cmp_as_default = true;
     };
 
+    snippets = {
+      preset = "luasnip";
+    };
+
     completion = {
       accept = {
         auto_brackets = {
@@ -22,6 +26,15 @@
 
     keymap = {
       preset = "super-tab";
+
+      "<C-j>" = [
+        "select_next"
+        "fallback"
+      ];
+      "<C-k>" = [
+        "select_prev"
+        "fallback"
+      ];
     };
 
     signature = {
