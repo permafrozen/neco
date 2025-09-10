@@ -18,5 +18,6 @@
     lualine = import ./lualine.nix;
     mini = import ./mini.nix;
     luasnip = import ./luasnip.nix;
+    vimtex = import ./vimtex.nix;
   };
 }

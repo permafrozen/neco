@@ -37,30 +37,29 @@
       };
     }
 
-    # IMPORTANT: no line breaks in 'action' or the command will not be evaluated correctly
     {
-      action = ''<cmd>lua if require("luasnip").expand_or_jumpable() then return require("luasnip").expand_or_jump() else return "<TAB>" end<CR>'';
-      key = "<TAB>";
+      action = ''<cmd>lua require("luasnip").jump(1)<CR>'';
+      key = "<C-K>";
       mode = [
         "i"
         "s"
       ];
       options = {
         silent = true;
-        desc = "expand or jump next in snippet";
+        desc = "snippet jump up";
       };
     }
 
     {
-      action = ''<cmd>lua require("luasnip").jump(-1)'';
-      key = "<S-TAB>";
+      action = ''<cmd>lua require("luasnip").jump(-1)<CR>'';
+      key = "<C-J>";
       mode = [
         "i"
         "s"
       ];
       options = {
         silent = true;
-        desc = "jump back in snippet";
+        desc = "snippet jump down";
       };
     }
   ];

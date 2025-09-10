@@ -8,4 +8,8 @@
       paths = ../snippets;
     }
   ];
+  filetypeExtend = {
+    tex = [ "latex" ];
+    plaintex = [ "tex" ];
+  };
 }

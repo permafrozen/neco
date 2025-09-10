@@ -77,5 +77,10 @@
     glsl_analyzer = {
       enable = true;
     };
+
+    # Lua Language Server
+    lua_ls = {
+      enable = true;
+    };
   };
 }

@@ -10,9 +10,22 @@ local fmt = require("luasnip.extras.fmt").fmt
 local fmta = require("luasnip.extras.fmt").fmta
 local rep = require("luasnip.extras").rep
 
-return {
-  s(
-    { trig = "hi" },
-    { t("Hello, world!") }
-  ),
+local snippets = {}
+
+local greek_letters = {
+  a = "alpha",
+  b = "beta",
+  g = "gamma",
+  d = "delta",
+  o = "omega",
+  O = "Omega"
 }
+
+for trig, text in pairs(greek_letters) do
+  table.insert(snippets, s(
+    { trig = ";" .. trig, snippetType = "autosnippet" },
+    { t("\\" .. text) }
+  ))
+end
+
+return snippets

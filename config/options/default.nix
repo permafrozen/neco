@@ -9,6 +9,7 @@
     git
     gcc
     nodejs
+    tree-sitter
   ];
 
   # IMPORTANT: nixd will not work without setting utf-8 encoding
@@ -24,7 +25,7 @@
     mouse = "";
     encoding = "utf8";
     termguicolors = true;
-    wrap = false; 
+    wrap = false;
     tabstop = 2;
     shiftwidth = 2;
     smarttab = true;
